@@ -9,21 +9,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="/js/scripts.js"></script>
 </head>
 <body>
-    <div class="hero-img"></div>
     <div class="wrapper">
-        <header>
-            <a href="index.html" class="logo">
-                <img src="/assets/logo.svg" alt="dine">
-            </a>
-        </header>
-      
+              
         <section class="hero">
+            <header>
+                <a href="index.html" class="logo-header">
+                    <img src="/assets/logo.svg" alt="dine">
+                </a>
+            </header>
+        <div>
+           <picture>
+            <source media="(min-width: 960px)"
+                    srcset="assets/homepage/hero-bg-desktop.jpg,
+                    assets/homepage/hero-bg-desktop@2x.jpg 1068w,>
+                <source media="(min-width: 600px)"
+                        srcset="assets/homepage/hero-bg-tablet.jpg">
+                <source srcset="assets/homepage/hero-bg-mobile.jpg"> 
+
+            <img src="/assets/homepage/hero-bg-mobile.jpg"  class="hero-image" alt="dinner on a plate"> 
+           </picture>
+        </div>
+        <div>
             <h1>Exquisite dining since 1989</h1>
             <p class="subhead">Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.</p>
-            <img src="/assets/homepage/hero-bg-desktop.jpg" alt="">
             <button></button>
+        </div>
         </section>
 
         <!-- Further info sections -->
@@ -37,7 +50,14 @@
                     <h2 class="title">Enjoyable place for all the family</h2>
                     <p class="info">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.</p>
                 </div>
-                <img src="/assets/homepage/enjoyable-place-desktop.jpg" alt="Sheep by creek in autumn country side">
+                <picture>
+                    <source media="(min-width: 960px)"
+                            srcset="assets/homepage/enjoyable-place-desktop.jpg">
+                        <source media="(min-width: 600px)"
+                                srcset="assets/homepage/enjoyable-place-tablet.jpg">
+                        <source srcset="assets/homepage/enjoyable-place-mobile.jpg"> 
+                    <img src="/assets/homepage/enjoyable-place-mobile.jpg"  class="info-image" alt="Sheep by creek in autumn country side"> 
+                </picture>
             </div>
             <div class="local-info">
                 <svg class="divider" width="71" height="7" viewBox="0 0 71 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +68,14 @@
                     <h2 class="title">The most locally sourced food</h2>
                     <p class="info">All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.</p>
                 </div>
-                <img src="/assets/homepage/locally-sourced-desktop.jpg" alt="Sheep by creek in autumn country side">
+                <picture>
+                    <source media="(min-width: 960px)"
+                            srcset="assets/homepage/locally-sourced-desktop.jpg">
+                        <source media="(min-width: 600px)"
+                                srcset="assets/homepage/locally-sourced-tablet.jpg">
+                        <source srcset="assets/homepage/locally-sourced-mobile.jpg"> 
+                    <img src="/assets/homepage/locally-sourced-mobile.jpg"  class="info-image" alt="plate of food - people spooning on sauce"> 
+                </picture>
                 <svg width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="70" width="160" height="6" fill="#9E7F66"/>
                     <rect y="56" width="160" height="6" fill="#9E7F66"/>
@@ -69,7 +96,14 @@
                 <p class="menu-info">We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.</p>
             </Div>    
             <div class="seared-salmon-fillet">
-                <img src="/assets/homepage/salmon-desktop-tablet.jpg" class="menu-highlights" alt="salmon fillet with summer salad">
+                <picture>
+                    <source media="(min-width: 960px)"
+                            srcset="assets/homepage/salmon-desktop-tablet.jpg">
+                        <source media="(min-width: 600px)"
+                                srcset="assets/homepage/salmon-desktop-tablet.jpg">
+                        <source srcset="assets/homepage/salmon-mobile.jpg"> 
+                    <img src="/assets/homepage/salmon-mobile.jpg"  class="menu-highlights" alt="salmon fillet with summer salad"> 
+                </picture>
                 <svg width="32" height="1" viewBox="0 0 32 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="32" height="1" fill="#9E7F66"/>
                     </svg>                    
@@ -77,7 +111,14 @@
                 <p class="menu-highlights">Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
             </div>
             <div class="Rosemary-filet">
-                <img src="/assets/homepage/beef-desktop-tablet.jpg" class="menu-highlights" alt="beef prime filet">
+                <picture>
+                    <source media="(min-width: 960px)"
+                            srcset="assets/homepage/beef-desktop-tablet.jpg">
+                        <source media="(min-width: 600px)"
+                                srcset="assets/homepage/beef-desktop-tablet.jpg">
+                        <source srcset="assets/homepage/beef-mobile.jpg"> 
+                    <img src="/assets/homepage/salmon-mobile.jpg"  class="menu-highlights" alt="beef prime filet"> 
+                </picture>
                 <svg width="32" height="1" viewBox="0 0 32 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="32" height="1" fill="#9E7F66"/>
                     </svg>                    
@@ -85,7 +126,14 @@
                 <p class="menu-highlights">Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
             </div>
             <div class="Summer-dessert">
-                <img src="/assets/homepage/chocolate-desktop-tablet.jpg" class="menu-highlights" alt="chocolate mousse with berries">
+                <picture>
+                    <source media="(min-width: 960px)"
+                            srcset="assets/homepage/chocolate-desktop-tablet.jpg">
+                        <source media="(min-width: 600px)"
+                                srcset="assets/homepage/chocolate-desktop-tablet.jpg">
+                        <source srcset="assets/homepage/chocolate-mobile.jpg"> 
+                    <img src="/assets/homepage/chocolate-mobile.jpg"  class="menu-highlights" alt="chocolate mousse with berries"> 
+                </picture>
                 <svg width="32" height="1" viewBox="0 0 32 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="32" height="1" fill="#9E7F66"/>
                     </svg>                    
@@ -104,7 +152,16 @@
                     <rect y="14" width="160" height="6" fill="#9E7F66"/>
                     <rect width="160" height="6" fill="#9E7F66"/>
                 </svg>
-                <img src="/assets/homepage/family-gathering-desktop.jpg" alt="family gathered around table with food">
+
+                <picture>
+                    <source media="(min-width: 960px)"
+                            srcset="assets/homepage/family-gathering-desktop.jpg">
+                        <source media="(min-width: 600px)"
+                                srcset="assets/homepage/family-gathering-tablet.jpg">
+                        <source srcset="assets/homepage/family-gathering-mobile.jpg"> 
+                    <img src="/assets/homepage/family-mobile.jpg"  class="menu-highlights" alt="family gathered around table with food"> 
+                </picture>
+               
                 <Div class="content">
                     <h2>Family Gathering</h2>
                     <p>We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>
@@ -127,7 +184,16 @@
                     <rect y="14" width="160" height="6" fill="#9E7F66"/>
                     <rect width="160" height="6" fill="#9E7F66"/>
                 </svg>
-                <img src="/assets/homepage/special-events-desktop.jpg" alt="group of people of all ages at table cheersing">
+
+                <picture>
+                    <source media="(min-width: 960px)"
+                            srcset="assets/homepage/special-events-desktop.jpg">
+                        <source media="(min-width: 600px)"
+                                srcset="assets/homepage/special-events-tablet.jpg">
+                        <source srcset="assets/homepage/special-events-mobile.jpg"> 
+                    <img src="/assets/homepage/special-events-mobile.jpg"  alt="group of people of all ages at table cheersing"> 
+                </picture>
+
                 <Div class="content">
                     <h2>Special Events</h2>
                     <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal.</p>
@@ -150,7 +216,15 @@
                     <rect y="14" width="160" height="6" fill="#9E7F66"/>
                     <rect width="160" height="6" fill="#9E7F66"/>
                 </svg>
-                <img src="/assets/homepage/social-events-desktop.jpg" alt="table with wine glasses and figure leaning on it from the side">
+                <picture>
+                    <source media="(min-width: 960px)"
+                            srcset="assets/homepage/social-events-desktop.jpg">
+                        <source media="(min-width: 600px)"
+                                srcset="assets/homepage/social-events-tablet.jpg">
+                        <source srcset="assets/homepage/social-events-mobile.jpg"> 
+                    <img src="/assets/homepage/social-events-mobile.jpg"  alt="table with wine glasses and figure leaning on it from the side"> 
+                </picture>
+                
                 <Div class="content">
                     <h2>Social Events</h2>
                     <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.</p>
@@ -167,7 +241,16 @@
     <!-- Ready to make a reservation -->
     <section>
         <Div class="ready-to-book">   
-            <img src="/assets/homepage/ready-bg-desktop.jpg" alt="">
+
+            <picture>
+                <source media="(min-width: 960px)"
+                        srcset="assets/homepage/ready-bg-desktop.jpg">
+                    <source media="(min-width: 600px)"
+                            srcset="assets/homepage/ready-bg-tablet.jpg">
+                    <source srcset="assets/homepage/ready-bg-mobile.jpg"> 
+                <img src="/assets/homepage/ready-bg-mobile.jpg"  alt="table with wine glasses and figure leaning on it from the side"> 
+            </picture>
+
             <h2 class="ready-to-book">Ready to make a reservation?</h2>
             <button class="ready-to-book">Book a table</button>
         </Div>
