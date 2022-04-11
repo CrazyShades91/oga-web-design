@@ -1,14 +1,15 @@
 body {
     font-family: 'Spartan', sans-serif;
+    margin: 5em;
 }
 
 h1 {
     font-style: normal;
     font-weight: 300;
-    font-size: 4em;
+    font-size: 2em;
     line-height: 72px; 
     letter-spacing: -0.8px;
-    color: #17192B;
+    color: #fff;
 }
 
 h2 {
@@ -35,6 +36,15 @@ p {
     line-height: 30px;
     letter-spacing: -0.225px;
     color: #242B37;
+}
+
+p.subhead {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 30px;
+    letter-spacing: -0.225px;
+    color: #fff;
 }
 
 p.info {
@@ -76,19 +86,55 @@ button:hover {
 button:disabled {
     opacity: 0.6;
     cursor: not-allowed;
-}    
+} 
+
+.hero-img {
+    background: url('/assets/homepage/hero-bg-mobile.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    z-index: -1;
+}
+
+// desktop sizing
 @media (min-width: 600px) {
     body {
       display: grid;
     //   grid-template-columns: repeat(2, 1fr);
     //   grid-gap: 2em;
     }
-  }
-  
-  img {
-    width: 100%;
-  }
+    h1 {
+        font-size:3em;
+    }
+    .hero-img {
+        background: url('/assets/homepage/hero-bg-desktop.jpg');
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: contain;
+        background-position-x: right;
+        width: 100%;
+        height: 80vh;
+        z-index: -1;
+    }
 
-body.hero {
-    background-color: #863a3a;
-}  
+} 
+// Tablet sizing
+@media ((min-device-width: 768px)) {
+    h1 {
+        font-size:4em;
+    }
+    .hero-img {
+        background: url('/assets/homepage/hero-bg-tablet.jpg');
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        z-index: -1;
+    }
+}
