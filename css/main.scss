@@ -1,15 +1,16 @@
 body {
     font-family: 'Spartan', sans-serif;
-    margin: 5em;
+    margin: 2em;
 }
 
 h1 {
     font-style: normal;
     font-weight: 300;
     font-size: 2em;
-    line-height: 72px; 
+    line-height: 40px; 
     letter-spacing: -0.8px;
     color: #fff;
+    text-align: center;
 }
 
 h2 {
@@ -41,10 +42,11 @@ p {
 p.subhead {
     font-style: normal;
     font-weight: 400;
-    font-size: 1.125em;
-    line-height: 30px;
-    letter-spacing: -0.225px;
+    font-size: 0.9375em;
+    line-height: 25px;
+    letter-spacing: -0.19px;
     color: #fff;
+    text-align: center;
 }
 
 p.info {
@@ -99,16 +101,28 @@ button:disabled {
     z-index: -1;
 }
 
+.logo-header {
+    display: flex;
+    margin: auto;
+}
+
+
 // desktop sizing
 @media (min-width: 600px) {
     body {
       display: grid;
+      margin: 5em;    
     //   grid-template-columns: repeat(2, 1fr);
     //   grid-gap: 2em;
     }
     h1 {
         font-size:3em;
+        line-height: 72px; 
+        letter-spacing: -0.8px;
+        color: #fff;
+        text-align: unset;
     }
+
     .hero-img {
         background: url('/assets/homepage/hero-bg-desktop.jpg');
         position: absolute;
@@ -119,6 +133,15 @@ button:disabled {
         width: 100%;
         height: 80vh;
         z-index: -1;
+    }
+    p.subhead {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125em;
+        line-height: 30px;
+        letter-spacing: -0.225px;
+        color: #fff;
+        text-align: unset;
     }
 
 } 
