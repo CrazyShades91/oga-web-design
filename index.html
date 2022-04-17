@@ -31,39 +31,36 @@
         <!-- Further info sections -->
         <section class="more-info">
             <div class="family-info">
-                <img src="/assets/homepage/enjoyable-place-mobile.jpg" 
-                srcset=" assets/homepage/enjoyable-place-tablet.jpg, assets/homepage/enjoyable-place-tablet.jpg , assets/homepage/enjoyable-place-desktop.jpg"
-                sizes="(min-width: 600px) 50vw, 100vw">
-                <!-- <picture>
-                    <source media="(min-width: 960px)"
-                            srcset="assets/homepage/enjoyable-place-desktop.jpg">
-                        <source media="(min-width: 600px)"
-                                srcset="assets/homepage/enjoyable-place-tablet.jpg">
-                        <source srcset="assets/homepage/enjoyable-place-mobile.jpg"> 
-                    <img src="/assets/homepage/enjoyable-place-mobile.jpg"  class="info-image" alt="Sheep by creek in autumn country side"> 
-                </picture> -->
+                <picture>
+                    <source media="(min-width: 991px)" srcset="/assets/homepage/enjoyable-place-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="/assets/homepage/enjoyable-place-tablet.jpg">
+                    <source media="(min-width: 767px)" srcset="assets/homepage/enjoyable-place-mobile.jpg">
+                        <img src="/assets/homepage/enjoyable-place-mobile.jpg"  alt="country side with creek and sheep"> 
+                </picture>
+                
                 <div class="rectangle"></div>
                 <svg class="divider" width="71" height="7" viewBox="0 0 71 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="15" y="3" width="56" height="1" fill="#9E7F66"/>
                     <circle cx="3.5" cy="3.5" r="3" stroke="#9E7F66"/>
                 </svg> 
+                
                 <div class="content">
+                    <svg class="desktop-divider" width="71" height="7" viewBox="0 0 71 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="15" y="3" width="56" height="1" fill="#9E7F66"/>
+                        <circle cx="3.5" cy="3.5" r="3" stroke="#9E7F66"/>
+                    </svg> 
                     <h2 class="title">Enjoyable place for all the family</h2>
                     <p class="info">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.</p>
                 </div>
             </div>
             <div class="local-info">
-                <img src="/assets/homepage/locally-sourced-mobile.jpg" 
-                srcset="assets/homepage/locally-sourced-tablet.jpg, locally-sourced-desktop.jpg"
-                sizes="(min-width: 600px) 50vw, 100vw">
-                <!-- <picture>
-                    <source media="(min-width: 960px)"
-                            srcset="assets/homepage/locally-sourced-desktop.jpg">
-                        <source media="(min-width: 600px)"
-                                srcset="assets/homepage/locally-sourced-tablet.jpg">
-                        <source srcset="assets/homepage/locally-sourced-mobile.jpg"> 
-                    <img src="/assets/homepage/locally-sourced-mobile.jpg"  class="info-image-local" alt="plate of food - people spooning on sauce"> 
-                </picture> -->
+                <picture>
+                    <source media="(min-width: 991px)" srcset="/assets/homepage/locally-sourced-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="/assets/homepage/locally-sourced-tablet.jpg">
+                    <source media="(min-width: 767px)" srcset="assets/homepage/locally-sourced-mobile.jpg">
+                        <img src="/assets/homepage/locally-sourced-mobile.jpg"  alt="group of people of all ages at table cheersing"> 
+                </picture>
+        
                 <svg class="grid" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="70" width="160" height="6" fill="#9E7F66"/>
                     <rect y="56" width="160" height="6" fill="#9E7F66"/>
@@ -78,6 +75,10 @@
                     </svg>
                     
                 <div class="content">
+                    <svg class="desktop-divider" width="71" height="7" viewBox="0 0 71 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="15" y="3" width="56" height="1" fill="#9E7F66"/>
+                        <circle cx="3.5" cy="3.5" r="3" stroke="#9E7F66"/>
+                    </svg> 
                     <h2 class="title">The most locally sourced food</h2>
                     <p class="info">All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.</p>
                 </div>
@@ -95,25 +96,30 @@
                     <h2 class="menu-header">A few highlights from our menu</h2>
                     <p class="menu-info">We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.</p>
                     <div class="seared-salmon-fillet">
-                        <img src="/assets/homepage/salmon-mobile.jpg" 
-                        srcset=/assets/homepage/salmon-desktop-tablet.jpg, salmon-desktop-tablet.jpg"
-                         sizes="(min-width: 600px) 50vw, 100vw" alt="salmon fillet with summer salad">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="/assets/homepage/salmon-mobile.jpg" >
+                            <source media="(min-width: 768px)" srcset="/assets/homepage/salmon-desktop-tablet.jpg" > 
+                            <img src="/assets/homepage/salmon-mobile.jpg" alt="Salmon on plate with greens"> 
+                        </picture>
+                    
                          <svg class="divider-mobile" width="32" height="1" viewBox="0 0 32 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="32" height="1" fill="#9E7F66"/>
                         </svg>      
                         <div class="menu-details">                              
                                 <h3 class="menu-highlights">Seared Salmon Fillet</h3>
-                                <p class="menu-highlights">Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
-                                
+                                <p class="menu-highlights">Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>  
                         </div>
                     </div>
                     <svg width="327" height="1" viewBox="0 0 327 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect opacity="0.149414" width="327" height="1" fill="white"/>
                     </svg>
                     <div class="Rosemary-fillet">
-                        <img src="/assets/homepage/beef-mobile.jpg" 
-                        srcset=/assets/homepage/beef-desktop-tablet.jpg, beef-desktop-tablet.jpg"
-                         sizes="(min-width: 600px) 50vw, 100vw" alt="salmon fillet with summer salad">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="/assets/homepage/beef-mobile.jpg" >
+                            <source media="(min-width: 768px)" srcset="/assets/homepage/beef-desktop-tablet.jpg" > 
+                            <img src="/assets/homepage/beef-mobile.jpg" alt="beef fillet on plate"> 
+                        </picture>
+
                         <svg class="divider-mobile" width="32" height="1" viewBox="0 0 32 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="32" height="1" fill="#9E7F66"/>
                         </svg>    
@@ -126,9 +132,12 @@
                         </svg>       
                     </div>
                     <div class="Summer-dessert">
-                        <img class="menu-image" src="/assets/homepage/chocolate-mobile.jpg" 
-                        srcset=/assets/homepage/chocolate-desktop-tablet.jpg, beef-desktop-tablet.jpg"
-                         sizes="(min-width: 600px) 50vw, 100vw" alt="salmon fillet with summer salad">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="/assets/homepage/chocolate-mobile.jpg" >
+                            <source media="(min-width: 768px)" srcset="/assets/homepage/chocolate-desktop-tablet.jpg" > 
+                            <img src="/assets/homepage/chocolate-mobile.jpg" alt="chocolate on a plate with a variety of berries"> 
+                        </picture>
+                       
                         <svg class="divider-mobile" width="32" height="1" viewBox="0 0 32 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="32" height="1" fill="#9E7F66"/>
                         </svg>   
@@ -155,11 +164,10 @@
                     </svg>
 
                     <picture>
-                        <source media="(min-width: 960px)"
-                                srcset="/assets/homepage/family-gathering-desktop.jpg">
-                            <source media="(min-width: 768px)"
-                                    srcset="assets/homepage/family-gathering-tablet.jpg">
-                            <img src="/assets/homepage/family-gathering-desktop.jpg"  class="menu-highlights" alt="family gathered around table with food"> 
+                        <source media="(min-width: 1200px)" srcset="/assets/homepage/family-gathering-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="/assets/homepage/family-gathering-tablet.jpg">
+                        <source media="(min-width: 767px)" srcset="assets/homepage/family-gathering-mobile.jpg">
+                            <img src="/assets/homepage/family-gathering-mobile.jpg"  alt="family gathered around table with food"> 
                     </picture>
                       
                     <Div class="content">
@@ -185,12 +193,10 @@
                     </svg>
 
                     <picture>
-                        <source media="(min-width: 960px)"
-                                srcset="assets/homepage/special-events-desktop.jpg">
-                            <source media="(min-width: 768px)"
-                                    srcset="assets/homepage/special-events-tablet.jpg">
-                            <source srcset="assets/homepage/special-events-mobile.jpg"> 
-                        <img src="/assets/homepage/special-events-mobile.jpg"  alt="group of people of all ages at table cheersing"> 
+                            <source media="(min-width: 1200px)" srcset="/assets/homepage/special-events-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="/assets/homepage/special-events-tablet.jpg">
+                            <source media="(min-width: 767px)" srcset="assets/homepage/special-events-mobile.jpg">
+                                <img src="/assets/homepage/special-events-mobile.jpg"  alt="group of people of all ages at table cheersing"> 
                     </picture>
 
                     <Div class="content">
@@ -216,11 +222,11 @@
                         <rect width="160" height="6" fill="#9E7F66"/>
                     </svg>
                     <picture>
-                        <source media="(min-width: 960px)"
+                        <source media="(min-width: 1200px)"
                                 srcset="assets/homepage/social-events-desktop.jpg">
-                            <source media="(min-width: 600px)"
+                            <source media="(min-width: 768px)"
                                     srcset="assets/homepage/social-events-tablet.jpg">
-                            <source srcset="assets/homepage/social-events-mobile.jpg"> 
+                            <source media="(min-width: 767px)" srcset="assets/homepage/social-events-mobile.jpg"> 
                         <img src="/assets/homepage/social-events-mobile.jpg"  alt="table with wine glasses and figure leaning on it from the side"> 
                     </picture>
                     

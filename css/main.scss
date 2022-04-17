@@ -80,7 +80,7 @@ a {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 0;
-    padding: 7% 15%;
+    padding: 25px 60px;
     text-transform:uppercase;
     font-family: 'Spartan';
     font-style: normal;
@@ -164,7 +164,7 @@ a {
     background-color: #111111;
     box-sizing: border-box;
     border-radius: 0;
-    padding: 7% 15%;
+    padding: 25px 60px;
     text-transform:uppercase;
     font-family: 'Spartan';
     font-style: normal;
@@ -177,6 +177,7 @@ a {
 .slide {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .book-img {
@@ -222,7 +223,7 @@ footer {
 
 
 // desktop sizing
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     body {
         padding: 0em;
     //   display: grid;
@@ -276,7 +277,7 @@ footer {
         font-size:4em;
         line-height: 64px;
     }
-    h2 {
+    h2, h2.ready-to-book{
         font-size: 2.5em;
         line-height: 56px;
     }
@@ -325,7 +326,7 @@ footer {
         position: absolute;
         width: 160px;
         height: 76px;
-        left: 650px;
+        left: 550px;
         top: 1917px;
     }
 
@@ -341,8 +342,11 @@ footer {
     p.address, p.open-times {
         text-align: left;
     }
-    .more-info, .menu-content, .hero-content, .events {
+    .more-info, .menu-content, .hero-content {
         padding: 0em 5em 0em;
+    }
+    .events {
+        padding: 5em 5em 0em 5em;
     }
     
     .family-info, .local-info {
@@ -369,10 +373,10 @@ footer {
     }
     .lower-rectangle {
         position: absolute;
-        width: 430px;
-        height: 200px;
-        left: 384px;
-        top: 2162px;
+        width: 350px;
+        height: 255px;
+        left: 416px;
+        top: 2209px;
 
         background: #5C6779;
         mix-blend-mode: normal;
@@ -401,6 +405,17 @@ footer {
         align-items: center;
         padding-top: 5% !important;
         padding-bottom: 5% !important;
+    }
+    .reservation {
+        background: url(/assets/homepage/ready-bg-tablet.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 2em;
     }
 
 }

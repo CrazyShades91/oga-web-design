@@ -81,7 +81,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0;
-  padding: 7% 15%;
+  padding: 25px 60px;
   text-transform: uppercase;
   font-family: 'Spartan';
   font-style: normal;
@@ -180,7 +180,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0;
-  padding: 7% 15%;
+  padding: 25px 60px;
   text-transform: uppercase;
   font-family: 'Spartan';
   font-style: normal;
@@ -199,6 +199,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .book-img {
@@ -254,7 +257,7 @@ footer {
   padding: 2em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   body {
     padding: 0em;
   }
@@ -269,8 +272,16 @@ footer {
     font-size: 2.5em;
     line-height: 56px;
   }
-  .hero-button {
+  /* .hero-button {
     padding: 5% 10%;
+  } */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 5em;
+    margin: unset;
   }
   .hero-img {
     background: url("/assets/homepage/hero-bg-desktop.jpg");
@@ -282,6 +293,13 @@ footer {
     width: 100%;
     height: 80vh;
     z-index: -1;
+    background-repeat: no-repeat;
+  }
+  .hero-content {
+    display: grid;
+    justify-items: start;
+    padding: 0;
+    margin-right: 35vw;
   }
   p.subhead {
     font-style: normal;
@@ -295,14 +313,37 @@ footer {
   footer {
     padding: 2em 5em;
   }
+  .divider {
+    display: none;
+  }
+  .desktop-divider {
+    display: block;
+  }
+  h2.title, p.info, p.menu-info, h2.menu-header {
+    text-align: left;
+  }
+  .family-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+  }
+  .local-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    flex-direction: row-reverse;
+    margin-top: 10%;
+  }
 }
 
-@media (min-device-width: 768px) {
+@media (min-device-width: 768px) and (max-device-wdith:991px) {
   h1 {
     font-size: 4em;
     line-height: 64px;
   }
-  h2 {
+  h2, h2.ready-to-book {
     font-size: 2.5em;
     line-height: 56px;
   }
@@ -315,6 +356,9 @@ footer {
     width: 100%;
     height: 90vh;
     z-index: -1;
+  }
+  .divider{
+    display: none;
   }
   .hero {
     margin-top: 50%;
@@ -349,7 +393,7 @@ footer {
     position: absolute;
     width: 160px;
     height: 76px;
-    left: 650px;
+    left: 550px;
     top: 1917px;
   }
   footer {
@@ -375,8 +419,11 @@ footer {
   p.address, p.open-times {
     text-align: left;
   }
-  .more-info, .menu-content, .hero-content, .events {
+  .more-info, .menu-content, .hero-content {
     padding: 0em 5em 0em;
+  }
+  .events {
+    padding: 5em 5em 0em 5em;
   }
   .family-info, .local-info {
     display: -webkit-box;
@@ -407,10 +454,10 @@ footer {
   }
   .lower-rectangle {
     position: absolute;
-    width: 430px;
-    height: 200px;
-    left: 384px;
-    top: 2162px;
+    width: 350px;
+    height: 255px;
+    left: 416px;
+    top: 2209px;
     background: #5C6779;
     mix-blend-mode: normal;
     opacity: 0.08;
@@ -448,6 +495,27 @@ footer {
             align-items: center;
     padding-top: 5% !important;
     padding-bottom: 5% !important;
+  }
+  .reservation {
+    background: url(/assets/homepage/ready-bg-tablet.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
