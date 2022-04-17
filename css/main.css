@@ -1,6 +1,7 @@
 body {
   font-family: 'Spartan', sans-serif;
-  margin: 2em;
+  padding: 0em;
+  margin: 0;
 }
 
 h1 {
@@ -16,10 +17,11 @@ h1 {
 h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5em;
-  line-height: 56px;
+  font-size: 2em;
+  line-height: 40px;
   letter-spacing: -0.5px;
   color: #242B37;
+  text-align: center;
 }
 
 h3 {
@@ -28,6 +30,7 @@ h3 {
   line-height: 28px;
   letter-spacing: -0.225px;
   color: #17192B;
+  text-align: center;
 }
 
 p {
@@ -37,16 +40,16 @@ p {
   line-height: 30px;
   letter-spacing: -0.225px;
   color: #242B37;
+  text-align: center;
 }
 
-p.subhead {
+p.subhead, p.menu-highlights, p.menu-info, p.address, p.open-times {
   font-style: normal;
   font-weight: 400;
   font-size: 0.9375em;
   line-height: 25px;
   letter-spacing: -0.19px;
   color: #fff;
-  text-align: center;
 }
 
 p.info {
@@ -58,37 +61,49 @@ p.info {
   color: #17192B;
 }
 
+p.menu-info {
+  text-align: center;
+}
+
+p.menu-info, p.menu-highlights, h2.menu-header,
+h3.menu-highlights, p.open-times, p.address,
+h2.ready-to-book {
+  color: #fff;
+}
+
 a {
+  color: #fff;
   text-decoration: none;
 }
 
-button {
+.hero-button, .book {
   border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0;
-  width: 245px;
-  height: 64px;
+  padding: 7% 15%;
   text-transform: uppercase;
   font-family: 'Spartan';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 2px;
+  text-align: center;
+  background-color: transparent;
 }
 
-button:hover {
-  background-color: #111111;
-  color: white;
+.hero-button:hover, .book:hover {
+  background-color: #fff;
+  border: 1px solid #FFFFFF;
   font-weight: 600;
   font-size: 0.875em;
   line-height: 16px;
   letter-spacing: 2px;
-  color: #FFFFFF;
+  color: #111111;
 }
 
-button:disabled {
+.hero-button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
@@ -100,7 +115,7 @@ button:disabled {
   left: 0;
   background-size: cover;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   z-index: -1;
 }
 
@@ -111,11 +126,137 @@ button:disabled {
   margin: auto;
 }
 
-@media (min-width: 600px) {
+.hero {
+  margin-top: 70%;
+}
+
+.hero-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+}
+
+.info-image {
+  margin-top: 25%;
+}
+
+.divider {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.grid, .divider-mobile {
+  display: none;
+}
+
+.menu {
+  background: #111111;
+  padding: 0em !important;
+}
+
+.menu-content, .hero-content, .more-info, .events {
+  padding: 2em;
+}
+
+.menu-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+.button {
+  background-color: #111111;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0;
+  padding: 7% 15%;
+  text-transform: uppercase;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.book-img {
+  background: url("/assets/homepage/ready-bg-mobile.jpg");
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -1;
+}
+
+.seared-salmon-fillet, .Rosemary-fillet, .Summer-dessert {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.reservation {
+  background: url(/assets/homepage/ready-bg-mobile.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 2em;
+}
+
+footer {
+  background-color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+}
+
+@media (min-width: 1200px) {
   body {
-    display: -ms-grid;
-    display: grid;
-    margin: 5em;
+    padding: 0em;
   }
   h1 {
     font-size: 3em;
@@ -123,6 +264,13 @@ button:disabled {
     letter-spacing: -0.8px;
     color: #fff;
     text-align: unset;
+  }
+  h2 {
+    font-size: 2.5em;
+    line-height: 56px;
+  }
+  .hero-button {
+    padding: 5% 10%;
   }
   .hero-img {
     background: url("/assets/homepage/hero-bg-desktop.jpg");
@@ -144,11 +292,19 @@ button:disabled {
     color: #fff;
     text-align: unset;
   }
+  footer {
+    padding: 2em 5em;
+  }
 }
 
-@media ((min-device-width: 768px)) {
+@media (min-device-width: 768px) {
   h1 {
     font-size: 4em;
+    line-height: 64px;
+  }
+  h2 {
+    font-size: 2.5em;
+    line-height: 56px;
   }
   .hero-img {
     background: url("/assets/homepage/hero-bg-tablet.jpg");
@@ -157,8 +313,141 @@ button:disabled {
     left: 0;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     z-index: -1;
+  }
+  .hero {
+    margin-top: 50%;
+  }
+  .hero-content {
+    padding: 0em 5em 5em;
+    gap: 5%;
+  }
+  .hero-button {
+    padding: 5% 10% !important;
+  }
+  p.subhead {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 30px;
+    letter-spacing: -0.225px;
+    color: #fff;
+    text-align: center;
+  }
+  p.info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 30px;
+    letter-spacing: -0.225px;
+    color: #111111;
+    text-align: center;
+  }
+  .grid {
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 76px;
+    left: 650px;
+    top: 1917px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 20%;
+            column-gap: 20%;
+  }
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  p.address, p.open-times {
+    text-align: left;
+  }
+  .more-info, .menu-content, .hero-content, .events {
+    padding: 0em 5em 0em;
+  }
+  .family-info, .local-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 5em;
+  }
+  .local-info {
+    padding-bottom: 2em;
+  }
+  .rectangle {
+    position: absolute;
+    width: 350px;
+    height: 255px;
+    top: 1265px;
+    margin: -5em !important;
+    background: #5C6779;
+    mix-blend-mode: normal;
+    opacity: 0.08;
+    border-radius: 100px 0px 0px 0px;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+    z-index: -1;
+  }
+  .lower-rectangle {
+    position: absolute;
+    width: 430px;
+    height: 200px;
+    left: 384px;
+    top: 2162px;
+    background: #5C6779;
+    mix-blend-mode: normal;
+    opacity: 0.08;
+    border-radius: 100px 0px 0px 0px;
+    z-index: -2;
+  }
+  .divider-mobile {
+    display: block;
+  }
+  .seared-salmon-fillet, .Summer-dessert, .Rosemary-fillet {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 150px auto auto;
+        grid-template-columns: 150px auto auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .menu-highlights {
+    text-align: left;
+  }
+  .menu-details {
+    padding-left: 5%;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
