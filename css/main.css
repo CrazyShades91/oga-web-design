@@ -191,7 +191,7 @@ a {
   text-align: center;
 }
 
-.slide {
+.family-gathering, .social-events, .special-events {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +328,7 @@ footer {
   p, h3, p.menu-info {
     text-align: left;
   }
-  .more-info {
+  .more-info, .events {
     padding: 0em 10em 5em;
   }
   .family-info {
@@ -378,8 +378,11 @@ footer {
     -webkit-column-gap: 2em;
             column-gap: 2em;
   }
-  .content {
-    margin-right: 25%;
+  .family-gathering, .content {
+    display: -ms-grid;
+    display: grid;
+    justify-items: start;
+    padding-left: 5em;
   }
   .local-content {
     margin-right: 10%;
@@ -447,6 +450,47 @@ footer {
     position: absolute;
     left: 10em;
     margin-top: 7em;
+  }
+  .grid-events {
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 76px;
+  }
+  .events-background {
+    display: block;
+    position: absolute;
+    width: 895px;
+    height: 320px;
+    margin: 0 !important;
+    padding: 0 !important;
+    left: 1px;
+    background: #5C6779;
+    mix-blend-mode: normal;
+    opacity: 0.08;
+    border-radius: 100px 0px 0px 0px;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .family-gathering, .special-events, .social-events {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  a.event-menu {
+    color: #111111;
+  }
+  .events-image {
+    -webkit-box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+            box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  a.ul {
+    color: #111111;
   }
   .reservation {
     background: url(/assets/homepage/ready-bg-desktop.jpg);

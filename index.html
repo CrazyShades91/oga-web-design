@@ -159,94 +159,98 @@
         <!-- Rotation between family gathering, special events and social events -->
         <section>
             <div class="events">
+                <div class="events-background"></div>
+                <svg class="grid-events" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="70" width="160" height="6" fill="#9E7F66"/>
+                    <rect y="56" width="160" height="6" fill="#9E7F66"/>
+                    <rect y="42" width="160" height="6" fill="#9E7F66"/>
+                    <rect y="28" width="160" height="6" fill="#9E7F66"/>
+                    <rect y="14" width="160" height="6" fill="#9E7F66"/>
+                    <rect width="160" height="6" fill="#9E7F66"/>
+                </svg>
             <!-- Family gathering slide -->
-                <div class="slide family-gathering active">
-                    <svg class="grid" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="70" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="56" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="42" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="28" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="14" width="160" height="6" fill="#9E7F66"/>
-                        <rect width="160" height="6" fill="#9E7F66"/>
-                    </svg>
-
+                <div class="family-gathering active">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="/assets/homepage/family-gathering-desktop.jpg">
                         <source media="(min-width: 768px)" srcset="/assets/homepage/family-gathering-tablet.jpg">
                         <source media="(min-width: 767px)" srcset="assets/homepage/family-gathering-mobile.jpg">
-                            <img src="/assets/homepage/family-gathering-mobile.jpg"  alt="family gathered around table with food"> 
+                            <img src="/assets/homepage/family-gathering-mobile.jpg" class="events-image"  alt="family gathered around table with food"> 
                     </picture>
                       
                     <Div class="content">
                         <h2>Family Gathering</h2>
                         <p>We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>
+                        <a href="/html/booking.html" class="button">Book a Table</a>
+                        <ul>
+                            <li><a class="event-menu" onclick="switchGathering()" href="">Family Gathering</a></li>
+                            <li><a class="event-menu" onclick="switchSpecial()" href="">Special Events</a></li>
+                            <li><a class="event-menu"onclick="switchSocial()"href="">Social Events</a></li>
+                        </ul>
                     </Div>
-                    <a href="/html/booking.html" class="button">Book a Table</a>
-                    <menu>
-                        <a href="">Family Gathering</a>
-                        <a href="">Special Events</a>
-                        <a href="">Social Events</a>
-                    </menu>
+
                 </div>
                 <!-- Special Events slide -->
-                <div class="slide special-events active">
-                    <svg class="grid" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="special-events">
+                    <!-- <svg class="grid" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="70" width="160" height="6" fill="#9E7F66"/>
                         <rect y="56" width="160" height="6" fill="#9E7F66"/>
                         <rect y="42" width="160" height="6" fill="#9E7F66"/>
                         <rect y="28" width="160" height="6" fill="#9E7F66"/>
                         <rect y="14" width="160" height="6" fill="#9E7F66"/>
                         <rect width="160" height="6" fill="#9E7F66"/>
-                    </svg>
+                    </svg> -->
 
                     <picture>
                             <source media="(min-width: 1200px)" srcset="/assets/homepage/special-events-desktop.jpg">
                             <source media="(min-width: 768px)" srcset="/assets/homepage/special-events-tablet.jpg">
                             <source media="(min-width: 767px)" srcset="assets/homepage/special-events-mobile.jpg">
-                                <img src="/assets/homepage/special-events-mobile.jpg"  alt="group of people of all ages at table cheersing"> 
+                                <img src="/assets/homepage/special-events-mobile.jpg"  class="events-image" alt="group of people of all ages at table cheersing"> 
                     </picture>
 
                     <Div class="content">
                         <h2>Special Events</h2>
                         <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal.</p>
+                        <a href="/html/booking.html" class="button">Book a Table</a>
+
+                        <menu>
+                            <a href="">Family Gathering</a>
+                            <a href="">Special Events</a>
+                            <a href="">Social Events</a>
+                        </menu>
                     </Div>
-                    
-                    <a href="/html/booking.html" class="button">Book a Table</a>
-                    <menu>
-                        <a href="">Family Gathering</a>
-                        <a href="">Special Events</a>
-                        <a href="">Social Events</a>
-                    </menu>
+                   
                 </div>
                 <!-- social events slide -->
-                <div class="slide social-events active">
-                    <svg class="grid" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="social-events">
+                    <!-- <svg class="grid" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="70" width="160" height="6" fill="#9E7F66"/>
                         <rect y="56" width="160" height="6" fill="#9E7F66"/>
                         <rect y="42" width="160" height="6" fill="#9E7F66"/>
                         <rect y="28" width="160" height="6" fill="#9E7F66"/>
                         <rect y="14" width="160" height="6" fill="#9E7F66"/>
                         <rect width="160" height="6" fill="#9E7F66"/>
-                    </svg>
+                    </svg> -->
                     <picture>
                         <source media="(min-width: 1200px)"
                                 srcset="assets/homepage/social-events-desktop.jpg">
                             <source media="(min-width: 768px)"
                                     srcset="assets/homepage/social-events-tablet.jpg">
                             <source media="(min-width: 767px)" srcset="assets/homepage/social-events-mobile.jpg"> 
-                        <img src="/assets/homepage/social-events-mobile.jpg"  alt="table with wine glasses and figure leaning on it from the side"> 
+                        <img src="/assets/homepage/social-events-mobile.jpg"  class="events-image" alt="table with wine glasses and figure leaning on it from the side"> 
                     </picture>
                     
                     <Div class="content">
                         <h2>Social Events</h2>
                         <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.</p>
+                        <a href="/html/booking.html" class="button">Book a Table</a>
+                        <menu>
+                            <a href="">Family Gathering</a>
+                            <a href="">Special Events</a>
+                            <a href="">Social Events</a>
+                        </menu>
                     </Div>
-                    <a href="/html/booking.html" class="button">Book a Table</a>
-                    <menu>
-                        <a href="">Family Gathering</a>
-                        <a href="">Special Events</a>
-                        <a href="">Social Events</a>
-                    </menu>
+                   
+                    
                 </div>
             </div>    
         </section>
