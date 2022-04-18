@@ -169,7 +169,7 @@
                     <rect width="160" height="6" fill="#9E7F66"/>
                 </svg>
             <!-- Family gathering slide -->
-                <div class="family-gathering active">
+                <div class="slide family-gathering">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="/assets/homepage/family-gathering-desktop.jpg">
                         <source media="(min-width: 768px)" srcset="/assets/homepage/family-gathering-tablet.jpg">
@@ -181,25 +181,17 @@
                         <h2>Family Gathering</h2>
                         <p>We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>
                         <a href="/html/booking.html" class="button">Book a Table</a>
-                        <ul>
-                            <li><a class="event-menu" onclick="switchGathering()" href="">Family Gathering</a></li>
-                            <li><a class="event-menu" onclick="switchSpecial()" href="">Special Events</a></li>
-                            <li><a class="event-menu"onclick="switchSocial()"href="">Social Events</a></li>
-                        </ul>
-                    </Div>
 
+                        <div class="dot-container">
+                            <p class="dot" onclick="currentSlide(1)">Family Gathering</p> 
+                            <p class="dot" onclick="currentSlide(2)">Special Events</p> 
+                            <p class="dot" onclick="currentSlide(3)">Social Events</p> 
+                        </div>
+                    </Div>
+                    
                 </div>
                 <!-- Special Events slide -->
-                <div class="special-events">
-                    <!-- <svg class="grid" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="70" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="56" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="42" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="28" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="14" width="160" height="6" fill="#9E7F66"/>
-                        <rect width="160" height="6" fill="#9E7F66"/>
-                    </svg> -->
-
+                <div class="slide special-events">
                     <picture>
                             <source media="(min-width: 1200px)" srcset="/assets/homepage/special-events-desktop.jpg">
                             <source media="(min-width: 768px)" srcset="/assets/homepage/special-events-tablet.jpg">
@@ -211,25 +203,17 @@
                         <h2>Special Events</h2>
                         <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal.</p>
                         <a href="/html/booking.html" class="button">Book a Table</a>
-
-                        <menu>
-                            <a href="">Family Gathering</a>
-                            <a href="">Special Events</a>
-                            <a href="">Social Events</a>
-                        </menu>
+                        <div class="dot-container">
+                            <p class="dot" onclick="currentSlide(1)">Family Gathering</p> 
+                            <p class="dot" onclick="currentSlide(2)">Special Events</p> 
+                            <p class="dot" onclick="currentSlide(3)">Social Events</p> 
+                        </div>
+                       
                     </Div>
-                   
+              
                 </div>
                 <!-- social events slide -->
-                <div class="social-events">
-                    <!-- <svg class="grid" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="70" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="56" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="42" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="28" width="160" height="6" fill="#9E7F66"/>
-                        <rect y="14" width="160" height="6" fill="#9E7F66"/>
-                        <rect width="160" height="6" fill="#9E7F66"/>
-                    </svg> -->
+                <div class="slide social-events">
                     <picture>
                         <source media="(min-width: 1200px)"
                                 srcset="assets/homepage/social-events-desktop.jpg">
@@ -248,10 +232,19 @@
                             <a href="">Special Events</a>
                             <a href="">Social Events</a>
                         </menu>
+                        <div class="dot-container">
+                            <p class="dot" onclick="currentSlide(1)">Family Gathering</p> 
+                            <p class="dot" onclick="currentSlide(2)">Special Events</p> 
+                            <p class="dot" onclick="currentSlide(3)">Social Events</p> 
+                        </div>
                     </Div>
-                   
-                    
+  
                 </div>
+                <!-- <div class="dot-container">
+                    <p class="dot" onclick="currentSlide(1)">Family Gathering</p> 
+                    <p class="dot" onclick="currentSlide(2)">Special Events</p> 
+                    <p class="dot" onclick="currentSlide(3)">Social Events</p> 
+                </div> -->
             </div>    
         </section>
     </div>

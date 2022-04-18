@@ -456,11 +456,12 @@ footer {
     position: absolute;
     width: 160px;
     height: 76px;
+    padding-top: 9em;
   }
   .events-background {
     display: block;
     position: absolute;
-    width: 895px;
+    width: 600px;
     height: 320px;
     margin: 0 !important;
     padding: 0 !important;
@@ -472,25 +473,79 @@ footer {
     -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
             transform: matrix(-1, 0, 0, 1, 0, 0);
   }
-  .family-gathering, .special-events, .social-events {
+  .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 5em;
+  }
+  .slide:active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .special-events, .social-events {
+    display: none;
+  }
+  .family-gathering.active, .special-events.active, .social-events.active {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 10em;
   }
   a.event-menu {
     color: #111111;
   }
   .events-image {
+    padding-top: 10em;
     -webkit-box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
             box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
   }
-  ul {
-    list-style-type: none;
-    padding: 0;
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+    text-align: left;
   }
-  a.ul {
-    color: #111111;
+  .dot-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  p.dot {
+    text-align: left;
+  }
+  .content {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
   }
   .reservation {
     background: url(/assets/homepage/ready-bg-desktop.jpg);
