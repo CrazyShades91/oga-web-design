@@ -12,46 +12,89 @@
     <script type="text/javascript" src="/js/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo-header">
-            <img src="/assets/logo.svg" alt="dine">
-        </a>
-        <script type="text/javascript" src="/js/scripts.js"></script>
-    </header>
-    
-    <section class="hero">
-        <img src="/assets/homepage/hero-bg-mobile.jpg" class="hero" alt="">
-        <h1>Reservations</h1>
-        <p class="subhead">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
-        
+    <section class="hero-booking">
+        <header>
+            <a href="oga-web-design/index.html" >
+                <img src="/assets/logo.svg" class="booking-logo-header" alt="dine">
+            </a>
+        </header>
+        <div class="booking-hero-img"></div>
+        <div class="hero-content">
+            <h1>Reservations</h1>
+            <p class="subhead">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
+            <a href="/html/booking.html" class="hero-button">Book a Table</a>
+        </div>
     </section>
+    <div class="spacing"></div>
     <!-- reservation form -->
     <section>
-        <div class="rs-form">
-            <div class="rs-form-text form-group field-name">
-                <label for="name" class="rs-form-text-label">Name</label>
-                <input type="text" class="name-input" name="name" access="false" id="name">
-            </div>
-            <div class="rs-form-text form-group field-email">
-                <label for="email" class="rs-form-text-label">Email</label>
-                <input type="email" class="email-input" name="email" access="false" id="email">
-            </div>
-            <span>
-                <label for="day">Day:</label>
-                <select name="day" id="day"></select>
-            </span>
-            <span>
-                <label for="month">Month:</label>
-                <select name="month" id="month"></select>
-            </span>
-            <span>
-                <label for="year">Year:</label>
-                <select name="year" id="year">Year:</select>
-            </span>
+        <form>
+            <div class="rs-form">
+                <div class="rs-form-text form-group field-name">
+                    <label for="name" class="rs-form-text-label"></label>
+                    <input type="text" placeholder="Name" class="name-input" name="name" access="false" id="name">
+                </div>
+                <div class="rs-form-text form-group field-email">
+                    <label for="email" class="rs-form-text-label"></label>
+                    <input type="email" placeholder="Email" class="email-input" name="email" access="false" id="email">
+                </div>
+                <div class="date-input">
+                    <p class="booking-heading">Pick a date</p>
+                    <div class="date-details">
+                        <div class="dt-column">
+                            <input id="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            type="number" maxlength = "2" type="number" placeholder="MM" >
+                        </div>
+                        <div class="dt-column">
+                            <input id="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            type="number" maxlength = "2" type="number" placeholder="DD" >
+                        </div>
+                        <div class="dt-column">
+                            <input id="year" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            type="number" maxlength = "4" placeholder="YYYY" />
+                        </div>
+                    </div>
+                </div>
+                <div class="Time-input">
+                    <p class="booking-heading">Pick a time</p>
+                    <div class="time-details">
+                        <div class="dt-column">
+                            <input id="number" type="number" placeholder="09" >
+                        </div>
+                        <div class="dt-column">
+                            <input id="number" type="number" placeholder="00" >
+                        </div>
+                        <div class="dt-column">
+                            <select id="time" >
+                                <option value="AM">AM</option>
+                                <option value="PM">PM</option>
+                            </select>    
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+    
+                    <form class="col-xs-5">
+                      <div class="form-group">
+                        <span class="numbutton input-number-decrement" data-bind="click: decrement">-</span>
+                        <input type="number" class="form-control numinput" id="num1" data-bind="value: inputNumber">
+                        <span class="numbutton input-number-increment" data-bind="click: increment">+</span>
+                      </div>
+                    </form>
+                    
+                      <div class="result" data-bind=""></div>
+                    </div>
+                        
+                    
+                <div>
+                    <input type="submit" value="Make a reservation" class="sub-btn">
+                </div>
             
-        </div>
-        <div>
-            <svg width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </form>
+    </section>
+    <section>
+        <div class="booking-style">
+            <svg class="booking-grid" width="160" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="70" width="160" height="6" fill="#9E7F66"/>
                 <rect y="56" width="160" height="6" fill="#9E7F66"/>
                 <rect y="42" width="160" height="6" fill="#9E7F66"/>
@@ -59,6 +102,12 @@
                 <rect y="14" width="160" height="6" fill="#9E7F66"/>
                 <rect width="160" height="6" fill="#9E7F66"/>
             </svg>                
+        </div>
+        <div>
+            <svg class="desktop-box" width="993" height="320" viewBox="0 0 993 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.0774042" d="M993 220C993 275.228 948.228 320 893 320H0V0H993V220Z" fill="#5C6779"/>
+            </svg>
+                
         </div>
     </section>
     <!-- footer -->
